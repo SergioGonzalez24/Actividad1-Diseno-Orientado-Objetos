@@ -8,9 +8,9 @@ CXXFLAGS = -std=c++11 -Wall
 LDFLAGS = 
 
 # Makefile settings - Can be customized.
-APPNAME = /Users/sergiogonzalez/OneDrive/GitHub/Actividad1-Diseno-Orientado-Objetos/app/Actividad1
+APPNAME = ../app/Actividad1
 EXT = .cpp
-SRCDIR = /Users/sergiogonzalez/OneDrive/GitHub/Actividad1-Diseno-Orientado-Objetos/src
+SRCDIR = ../src
 OBJDIR = .
 
 ############## Do not change anything from here downwards! #############
