@@ -1,3 +1,1 @@
-./Paquete.o: \
-  /Users/sergiogonzalez/OneDrive/GitHub/Actividad1-Diseno-Orientado-Objetos/src/Paquete.cpp \
-  /Users/sergiogonzalez/OneDrive/GitHub/Actividad1-Diseno-Orientado-Objetos/src/../include/Paquete.hpp
+./Paquete.o: ../src/Paquete.cpp ../src/../include/Paquete.hpp
