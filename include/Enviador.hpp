@@ -8,22 +8,21 @@ using std::string;
 class Enviador  {
 	private:
 		string nombre;
-		int id_sucursal;
-		string fecha_envio;
+		string id_sucursal; //{CAMBIE DE INT A STRING}
+		//{ELIMINE EL ATRIBUTO }
+
 
 	public:
 		//Constructores
-		Enviador();
-		Enviador(string nombre, int id_sucursal, string fecha_envio);
+		Enviador(); //{DECIDI SOLO UTILIZAR UN CONSTRUCTOR}
+		
 
 		//Geteres
 		string get_nombre() {return nombre;}
-		int get_id_sucursal() {return id_sucursal;}
-		string get_fecha_envio() {return fecha_envio;}
+		string get_id_sucursal() {return id_sucursal;}
 
 		//Seters
 		void set_nombre(string nombre);
 		void set_id_sucursal(string id_sucursal);
-		void set_fecha_env(string fecha_envio);
 };
 #endif
