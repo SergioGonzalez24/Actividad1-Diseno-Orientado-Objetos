@@ -44,7 +44,14 @@ void enviarPaquete() {
     cin >> notas;
 
     Paquete paq1(nombreEnviador,nombreDestinatario,direccion,id,peso,fecha,notas);
-}
 
+    cout << endl;
+    paq1.print();
+}
+/*
+void efecto_carga() {
+
+}
+*/
 #endif
 
