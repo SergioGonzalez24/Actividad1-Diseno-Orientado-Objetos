@@ -8,13 +8,12 @@ using std::string;
 class Enviador  {
 	private:
 		string nombre;
-		string id_sucursal; //{CAMBIE DE INT A STRING}
-		//{ELIMINE EL ATRIBUTO }
+		string id_sucursal; 
 
 
 	public:
 		//Constructores
-		Enviador(); //{DECIDI SOLO UTILIZAR UN CONSTRUCTOR}
+		Enviador();
 		
 
 		//Geteres

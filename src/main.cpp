@@ -21,20 +21,16 @@ int main() {
 
         if (seleccion == 1) {
             //codigo aqui.
+            cout << "Funciona" << endl;
         }
         else if (seleccion == 2) {
             cout << "Gracias y Vuelva Pronto" << endl;
-            exit(2);
-            return(2);
         }
         else {
             cout << "Valor no valido, Intente otra vez " << endl;
         }
     }
-    while (seleccion != 1);
+    while (seleccion != 2); 
     
-
-    
-
     return 0;
 }
