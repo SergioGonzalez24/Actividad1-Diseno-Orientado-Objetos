@@ -19,9 +19,27 @@ int main() {
         cout << "Ingrese el numero de su seleccion: ";
         cin >> seleccion;
 
+        Enviador enviador1;
+
         if (seleccion == 1) {
+
             //codigo aqui.
-            cout << "Funciona" << endl;
+            string nombreEnviador;
+            string idSucursal;
+            string nombreDestinatario;
+            string direccion;
+
+
+            cout << "Ingrese sus datos" << endl;
+            cout << "Nombre: ";
+            cin >> nombreEnviador;
+            cout << "\n Id Sucursal: ";
+            cin >> idSucursal;
+            
+
+
+
+
         }
         else if (seleccion == 2) {
             cout << "Gracias y Vuelva Pronto" << endl;
