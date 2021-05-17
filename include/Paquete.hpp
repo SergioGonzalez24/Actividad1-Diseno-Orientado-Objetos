@@ -1,34 +1,45 @@
 #ifndef PAQUETE_H
 #define PAQUETE_H
+#include "../include/Enviador.hpp"
+#include "../include/Destinatario.hpp"
 #include <string>
 
 using std::string;
 
 class Paquete  {
 	private:
-		string id;
+
+	
+		Enviador nombre_enviador;
+		Destinatario datos_destinatario;
+
+		string id_paquete;
 		double peso;
 		string fecha_envio;
-		string fecha_entrega;
 		string notas;
 
 	public:
 		//Constructores
-		Paquete();
-		Paquete(string id, double peso, string fecha_envio, string fecha_entrega, string notas);
+		Paquete(string de,string para, string direccion,
+		string id_paquete, double peso,
+		string fecha_envio, string notas);
 
 		//Geters
-		string get_id() {return id;}
+		Enviador get_nombre_enviador() {return nombre_enviador;}
+		Destinatario get_datos_destinatario() {return datos_destinatario;}
+
+		string get_id() {return id_paquete;}
 		double get_peso() {return peso;}
 		string get_fecha_envio() {return fecha_envio;}
-		string get_fecha_entrega() {return fecha_entrega;}
 		string get_notas() {return notas;}
 
 		//Seters
-		void set_id(string id);
+		void set_nombre_enviador(string de);
+		void set_datos_destinatario(string para, string direccion);
+
+		void set_id(string id_paquete);
 		void set_peso(double peso);
 		void set_fecha_envio(string fecha_envio);
-		void set_fecha_entrega(string fecha_entrega);
 		void set_notas(string notas);
 
 };

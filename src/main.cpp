@@ -1,7 +1,5 @@
 #include <iostream>
-#include "../include/Destinatario.hpp"
-#include "../include/Enviador.hpp"
-#include "../include/Paquete.hpp"
+#include "../include/Funciones.hpp"
 
 using namespace std;
 
@@ -19,31 +17,14 @@ int main() {
         cout << "Ingrese el numero de su seleccion: ";
         cin >> seleccion;
 
-        Enviador enviador1;
-
         if (seleccion == 1) {
-
-            //codigo aqui.
-            string nombreEnviador;
-            string idSucursal;
-            string nombreDestinatario;
-            string direccion;
-
-
-            cout << "Ingrese sus datos" << endl;
-            cout << "Nombre: ";
-            cin >> nombreEnviador;
-            cout << "\n Id Sucursal: ";
-            cin >> idSucursal;
-            
-
-
-
-
+            enviarPaquete();
         }
+
         else if (seleccion == 2) {
             cout << "Gracias y Vuelva Pronto" << endl;
         }
+
         else {
             cout << "Valor no valido, Intente otra vez " << endl;
         }

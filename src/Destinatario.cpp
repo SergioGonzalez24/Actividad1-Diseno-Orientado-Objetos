@@ -5,8 +5,14 @@
 using std::string;
 
 Destinatario::Destinatario() {
-	nombre = "John Smith";
+    nombre = "John Smith";
     direccion = "";
+}
+
+Destinatario::Destinatario(string nombre, string direccion) {
+    this-> nombre = nombre;
+    this-> direccion = direccion;
+
 }
 
 void Destinatario::set_nombre(string nombre) {

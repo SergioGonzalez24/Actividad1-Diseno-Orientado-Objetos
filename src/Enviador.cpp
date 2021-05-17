@@ -6,15 +6,14 @@ using std::string;
 
 //Constructor
 Enviador::Enviador() {
-    nombre = "";
-    id_sucursal = "0000"; 
+    nombre = "John Smith";
+}
+Enviador::Enviador(string nombre) {
+    this-> nombre = nombre;
 }
 
 //Seters
 
 void Enviador::set_nombre(string nombre) {
     this-> nombre = nombre;
-}
-void Enviador::set_id_sucursal(string id) {
-    this-> id_sucursal = id;
 }

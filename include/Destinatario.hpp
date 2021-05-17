@@ -13,6 +13,7 @@ class Destinatario  {
 	public:
 		//Constructor
 		Destinatario();
+		Destinatario(string nombre, string direccion);
 
 		//Geters
 		string get_nombre() {return nombre;} 
