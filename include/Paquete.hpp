@@ -1,3 +1,13 @@
+/*
+Actividad Repaso OOP
+Proyecto desarrollado por Sergio Gonzalez y Jorge Rojas
+
+Definicion de clase Paquete
+
+*/
+
+//Clase Paquete creado por Sergio Gonzalez
+
 #ifndef PAQUETE_H
 #define PAQUETE_H
 #include "../include/Enviador.hpp"

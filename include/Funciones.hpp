@@ -1,3 +1,13 @@
+/*
+Actividad Repaso OOP
+Proyecto desarrollado por Sergio Gonzalez y Jorge Rojas
+
+Definicion de funciones utilizadas en main
+
+*/
+
+//Codigo Funciones creado por Jorge Rojas
+
 #ifndef FUNCIONES_H
 #define FUNCIONES_H
 
