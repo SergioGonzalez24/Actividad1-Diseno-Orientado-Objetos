@@ -8,9 +8,8 @@
 using namespace std;
 
 
-Paquete::Paquete(string de,string para, string direccion,
-                    string id_paquete, double peso, 
-                    string fecha_envio, string notas) {
+Paquete::Paquete(string de,string para, string direccion,string id_paquete,
+                double peso,string fecha_envio, string notas) {
     
     nombre_enviador = Enviador(de);
     datos_destinatario = Destinatario(para, direccion);

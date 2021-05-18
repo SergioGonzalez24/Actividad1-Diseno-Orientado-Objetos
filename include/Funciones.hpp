@@ -28,13 +28,14 @@ void enviarPaquete() {
 
     char valor_correcto;
 
-    do {
-        cout << "Ingrese los siguietes datos: \n" << endl;
+    //do {
+        cout << "Ingrese los siguietes datos: " << endl;
 
         cout << "De: ";
         string nombreEnviador;
         cin >> nombreEnviador;
         cout << endl;
+        
 
         cout << "\n Para: ";
         string nombreDestinatario;
@@ -76,9 +77,9 @@ void enviarPaquete() {
         cin >> valor_correcto;
         cout << endl;
 
-    }
+    //}
 
-    while (valor_correcto == 'n');
+    //while (valor_correcto == 'n');
 
 
 }
