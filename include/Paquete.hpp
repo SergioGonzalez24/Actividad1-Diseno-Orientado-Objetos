@@ -2,9 +2,11 @@
 #define PAQUETE_H
 #include "../include/Enviador.hpp"
 #include "../include/Destinatario.hpp"
+
 #include <string>
 
 using std::string;
+
 
 class Paquete  {
 	private:
@@ -42,5 +44,7 @@ class Paquete  {
 		void set_fecha_envio(string fecha_envio);
 		void set_notas(string notas);
 
+		//Otros
+		void print();
 };
 #endif

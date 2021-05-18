@@ -16,7 +16,7 @@ class Enviador  {
 		Enviador(string nombre);
 
 		//Geteres
-		string get_nombre() {return nombre;}
+		string get_nombre_enviador() {return nombre;}
 
 		//Seters
 		void set_nombre(string nombre);

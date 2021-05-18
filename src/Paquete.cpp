@@ -2,9 +2,10 @@
 #include "../include/Paquete.hpp"
 #include "../include/Enviador.hpp"
 #include "../include/Destinatario.hpp"
+
 #include <string>
 
-using std::string;
+using namespace std;
 
 
 Paquete::Paquete(string de,string para, string direccion,
@@ -44,6 +45,18 @@ void Paquete::set_fecha_envio(string fecha_envio) {
 
 void Paquete::set_notas(string notas) {
     this-> notas = notas;
+}
+
+void Paquete::print() {
+
+    	cout << "De: " << nombre_enviador.get_nombre_enviador() << endl; 
+        cout << "Para: " << datos_destinatario.get_nombre_destinatario() << endl;
+        cout << "Direccion: " << datos_destinatario.get_direccion() << endl;
+        cout << "Id: " << get_id() << endl;
+        cout << "Peso paquete: " << get_peso() << endl; 
+        cout<< "Fecha de envio: " << get_fecha_envio()<< endl; 
+        cout << "Notas: " << get_notas() << endl;
+
 }
 
 

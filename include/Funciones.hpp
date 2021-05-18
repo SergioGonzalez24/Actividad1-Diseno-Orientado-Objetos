@@ -8,50 +8,90 @@
 #include <iostream>
 
 #include <string>
+#include <thread>
+#include <chrono>
+#include <cmath>
 
 using namespace std;
 
 void enviarPaquete() {
 
-    cout << "Ingrese los siguietes datos: " << endl;
+    char valor_correcto;
 
-    cout << "De: ";
-    string nombreEnviador;
-    cin >> nombreEnviador;
+    do {
+        cout << "Ingrese los siguietes datos: \n" << endl;
 
-    cout << "\n Para: ";
-    string nombreDestinatario;
-    cin >> nombreDestinatario;
+        cout << "De: ";
+        string nombreEnviador;
+        cin >> nombreEnviador;
+        cout << endl;
 
-    cout <<"\n Direccion: ";
-    string direccion;
-    cin >> direccion;
+        cout << "\n Para: ";
+        string nombreDestinatario;
+        cin >> nombreDestinatario;
+        cout << endl;
 
-    cout << "\n id del paqute: ";
-    string id;
-    cin >> id;
+        cout <<"Direccion: ";
+        string direccion;
+        cin >> direccion;
+        cout << endl;
 
-    cout << "\n Peso del paquete: ";
-    double peso;
-    cin >> peso;
+        cout << "id del paqute: ";
+        string id;
+        cin >> id;
+        cout << endl;
 
-    cout << "\n Fecha de envio:";
-    string fecha;
-    cin >> fecha;
+        cout << "Peso del paquete en kg: ";
+        double peso;
+        cin >> peso;
+        cout << endl;
 
-    cout << "\n Notas adicionales: ";
-    string notas;
-    cin >> notas;
+        cout << "Fecha de envio (d/m/a) :";
+        string fecha;
+        cin >> fecha;
+        cout << endl;
 
-    Paquete paq1(nombreEnviador,nombreDestinatario,direccion,id,peso,fecha,notas);
+        cout << "Notas adicionales: ";
+        string notas;
+        cin >> notas;
+        cout << endl;
 
-    cout << endl;
-    paq1.print();
+        Paquete paq1(nombreEnviador, nombreDestinatario, direccion, id, peso, fecha, notas);
+
+        cout << endl;
+        paq1.print();
+        cout << endl;
+
+        cout << "Sus valores son correctos y/n? " << endl;
+        cin >> valor_correcto;
+        cout << endl;
+
+    }
+
+    while (valor_correcto == 'n');
+
+
 }
-/*
-void efecto_carga() {
 
+void efecto_carga(int time, const string message, char symbol) {
+
+    string progress_bar;
+    const double progress_level = 1.42;
+
+    cout << message << "\n\n";
+
+    for (double percentage = 0; percentage <= 100; percentage += progress_level) {
+        progress_bar.insert(0, 1, symbol);
+        cout << "\r [" << ceil(percentage) << '%' << "] " << progress_bar;
+        this_thread::sleep_for(chrono::milliseconds(time));       
+    }
+
+    cout << "\n\n";
+    cout << "¡Envio Procesado!";
+    cout << "\n\n";
 }
-*/
+
+
+
 #endif
 

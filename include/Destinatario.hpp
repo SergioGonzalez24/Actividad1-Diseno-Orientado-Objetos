@@ -16,7 +16,7 @@ class Destinatario  {
 		Destinatario(string nombre, string direccion);
 
 		//Geters
-		string get_nombre() {return nombre;} 
+		string get_nombre_destinatario() {return nombre;} 
 		string get_direccion() {return direccion;}
 
 		//Seters
