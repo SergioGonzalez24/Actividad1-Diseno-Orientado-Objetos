@@ -1,3 +1,13 @@
+/*
+Actividad Repaso OOP
+Proyecto desarrollado por Sergio Gonzalez y Jorge Rojas
+
+Definicion de clase Destinatario
+
+*/
+
+//Clase Destinatario creado por Sergio Gonzalez
+
 #ifndef DESTINATARIO_H
 #define DESTINATARIO_H
 

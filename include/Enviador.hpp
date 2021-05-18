@@ -1,3 +1,13 @@
+/*
+Actividad Repaso OOP
+Proyecto desarrollado por Sergio Gonzalez y Jorge Rojas
+
+Definicion de clase Enviador
+
+*/
+
+//Clase Enviador creado por Sergio Gonzalez
+
 #ifndef ENVIADOR_H
 #define ENVIADOR_H
 #include <string>

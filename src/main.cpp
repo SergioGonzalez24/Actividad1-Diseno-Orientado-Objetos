@@ -1,3 +1,12 @@
+/*
+Actividad Repaso OOP
+Proyecto desarrollado por Sergio Gonzalez y Jorge Rojas
+
+Actividad 1 Diseño Orienado a Objetos
+*/
+
+//Codigo Main creado por Jorge Rojas
+
 #include <iostream>
 #include "../include/Funciones.hpp"
 
